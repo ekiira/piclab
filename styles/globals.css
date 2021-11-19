@@ -8,3 +8,7 @@ html {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
 }
+
+body {
+  background: linear-gradient(305.47deg, #E14551 46.87%, #FF75B7 129.51%);
+}
