@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>PICLAB</title>
-        <meta name="description" content="Piclab website" />
+        <title>PicLab</title>
+        <meta name="description" content="Powerful image asset management for everyone." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
     </div>
