@@ -1,1 +1,1 @@
-## PicLab F.E. Test
+## PicLab F.E. Exercise
