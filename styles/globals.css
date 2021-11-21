@@ -7,6 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+.main-wrapper {
   background: linear-gradient(305.47deg, #E14551 46.87%, #FF75B7 129.51%);
 }
