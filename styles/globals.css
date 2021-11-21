@@ -8,5 +8,10 @@ html {
 }
 
 .main-wrapper {
-  background: linear-gradient(305.47deg, #E14551 46.87%, #FF75B7 129.51%);
+  background: linear-gradient(305.47deg, #e14551 46.87%, #ff75b7 129.51%);
+}
+
+.backdrop {
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(55px);
 }

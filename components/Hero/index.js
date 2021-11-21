@@ -50,18 +50,14 @@ function Hero() {
                   />
 
                   <div className={`absolute ${styles._right_5} top-1/4`}>
-                    <div
-                      className={`border border-white rounded-3xl inline-flex py-1 px-3 ${styles.backdrop}`}
-                    >
+                    <div className="order border-white rounded-3xl inline-flex py-1 px-3 backdrop">
                       <span className="text-white text-base">
                         <span className="opacity-30">#</span> Scenery
                       </span>
                     </div>
                   </div>
                   <div className={`absolute top-2/4 ${styles.right_60}`}>
-                    <div
-                      className={`border border-white rounded-3xl inline-flex py-1 px-3 ${styles.backdrop}`}
-                    >
+                    <div className="border border-white rounded-3xl inline-flex py-1 px-3 backdrop">
                       <span className="text-white text-base">
                         <span className="opacity-30">#</span> Water
                       </span>
@@ -80,9 +76,7 @@ function Hero() {
                   />
                 </div>
                 <div className="absolute top-1/3">
-                  <div
-                    className={`border border-white rounded-3xl inline-flex py-1 px-3 ${styles.backdrop}`}
-                  >
+                  <div className="border border-white rounded-3xl inline-flex py-1 px-3 backdrop">
                     <span className="text-white text-base	">
                       <span className="opacity-30">#</span> Person
                     </span>
@@ -99,9 +93,7 @@ function Hero() {
                       blurDataURL="/images/screenshot2.png"
                     />
                     <div className={`absolute ${styles.right_10} -top-1/4`}>
-                      <div
-                        className={`border border-white rounded-3xl inline-flex py-1 px-3 ${styles.backdrop}`}
-                      >
+                      <div className="border border-white rounded-3xl inline-flex py-1 px-3 backdrop">
                         <span className="text-white text-base">
                           <span className="opacity-30">#</span> Pencils
                         </span>
@@ -121,9 +113,7 @@ function Hero() {
                     blurDataURL="/images/screenshot3.png"
                   />
                   <div className={`absolute right-0 ${styles.top_5}`}>
-                    <div
-                      className={`border border-white rounded-3xl inline-flex py-1 px-3 ${styles.backdrop}`}
-                    >
+                    <div className="border border-white rounded-3xl inline-flex py-1 px-3 backdrop">
                       <span className="text-white text-base">
                         <span className="opacity-30">#</span> Desk
                       </span>

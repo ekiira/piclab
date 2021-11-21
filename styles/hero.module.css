@@ -26,8 +26,3 @@
 .top_40 {
   top: 40%;
 }
-
-.backdrop {
-  background: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(55px);
-}

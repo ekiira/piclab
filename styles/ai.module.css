@@ -1,0 +1,35 @@
+.bg {
+  background-image: url("/images/Gradient.png"), url("/images/Waves.png");
+  background-color: #262626;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100%, left bottom;
+  background-size: cover, 80% 80%;
+}
+
+._left_5 {
+  left: -5%;
+}
+
+.top_40 {
+  top: 40%;
+}
+
+.top_60 {
+  top: 60%;
+}
+
+.top_55 {
+  top: 55%;
+}
+
+.top_65 {
+  top: 65%;
+}
+
+.left_10 {
+  left: 10%;
+}
+
+.right_10 {
+  right: 10%;
+}

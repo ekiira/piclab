@@ -1,4 +1,5 @@
 import Head from "next/head";
+import AISection from "../components/AI";
 import HeroSection from "../components/Hero";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <div className='main-wrapper'>
         <HeroSection />
+        <AISection/>
       </div>
     </div>
   );
