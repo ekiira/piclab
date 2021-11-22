@@ -4,15 +4,15 @@ import { Splide, SplideSlide } from "splide-nextjs/react-splide";
 import { features } from "../../pages/api/feature";
 function Feature() {
   return (
-    <div className="max-h-screen py-20 container mx-auto">
-      <div className="text-center py-10">
+    <div className="h-full pt-20 container mx-auto">
+      <div className="text-center py-8">
         <p className="text-white text-3xl">
           Why <span className="font-bold">PicLab</span> is the perfect <br />{" "}
           lorem ipsum for you.
         </p>
       </div>
       <div>
-        <div className="pt-10 pl-16">
+        <div className="pt-10 pl-16 -mb-20">
           <Splide
             options={{
               perPage: 2,

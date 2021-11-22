@@ -8,6 +8,7 @@ module.exports = {
       ...defaultTheme.fontSize,
       tiny: ".5rem",
       "xs-1": ".813rem",
+      "lg-1": "1.188rem",
       "xl-1": "1.375rem",
     },
     boxShadow: {
@@ -28,7 +29,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: { borderWidth: ["last"] },
   },
   plugins: [],
 };

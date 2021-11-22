@@ -1,0 +1,6 @@
+.bg {
+  background-image: url("/images/news-main-bg.png"), url("/images/news-bg.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-color: #262626;
+}
