@@ -12,7 +12,7 @@ function Feature() {
         </p>
       </div>
       <div>
-        <div className="pt-10 pl-16 -mb-20">
+        <div className="pt-10 pl-10 md:pl-16 -mb-20">
           <Splide
             options={{
               perPage: 2,
@@ -22,6 +22,16 @@ function Feature() {
               pagination: false,
               fixedWidth: "34rem",
               arrows: false,
+              breakpoints: {
+                767: {
+                  perPage: 1,
+                  fixedWidth: "18rem",
+                },
+                1023: {
+                  perPage: 1,
+                  fixedWidth: "28rem",
+                },
+              },
             }}
           >
             {features?.map((el, index) => (
@@ -30,7 +40,7 @@ function Feature() {
                   key={index}
                   className="bg-white h-full rounded-xl pt-10 pb-2 w-full"
                 >
-                  <div className="px-10 w-4/5">
+                  <div className="px-5 md:px-10 lg:w-4/5">
                     <div className="pb-6">
                       <p className="text-gray-100 text-xs">{el.title}</p>
                     </div>
@@ -39,14 +49,14 @@ function Feature() {
                         {el.subtitle}
                       </p>
                     </div>
-                    <div className="pt-8">
+                    <div className="pt-5 md:pt-8">
                       <p className="text-dark opacity-70 text-xs-1">
                         {el.description}
                       </p>
                     </div>
                   </div>
-                  <div className="px-2 pt-14">
-                    <div className="relative h-80">
+                  <div className="px-2 pt-10 md:pt-14">
+                    <div className="relative h-56 lg:h-80">
                       <Image
                         src={el.image}
                         alt="feature"

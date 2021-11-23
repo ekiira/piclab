@@ -3,10 +3,10 @@ import styles from "../../styles/ai.module.css";
 
 function AISection() {
   return (
-    <div className={`${styles.bg} py-32`}>
+    <div className={`${styles.bg} py-24 md:py-32`}>
       <div className="container h-full w-full mx-auto">
-        <div className="grid grid-cols-3 h-full">
-          <div className="col-span-2">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 h-full px-10 lg:px-0">
+          <div className="hidden md:grid lg:col-span-2">
             <div className="relative h-full w-full">
               <div className={`absolute top-2/4 ${styles._left_5}`}>
                 <div className="border border-white rounded-3xl inline-flex py-1 px-3 backdrop">
@@ -57,8 +57,8 @@ function AISection() {
               </div>
             </div>
           </div>
-          <div className="pr-20 h-full items-center flex w-full">
-            <div className="bg-white h-full w-full rounded-lg shadow-new flex flex-col justify-between p-10">
+          <div className="lg:pr-20 h-full items-center flex w-full">
+            <div className="bg-white h-full w-full rounded-lg shadow-new flex flex-col justify-between p-8 md:p-10">
               <div>
                 <p className="text-gray-100 text-xs">Artificial Intelligence</p>
                 <p className="pt-6 text-dark text-xl-1 font-medium">
