@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AISection from "../components/AI";
+import CtaSection from "../components/CTA";
 import FeatureSection from "../components/Features";
 import HeroSection from "../components/Hero";
 import NewsSection from "../components/News";
@@ -20,6 +21,7 @@ export default function Home() {
         <AISection/>
         <FeatureSection/>
         <NewsSection/>
+        <CtaSection/>
       </div>
     </div>
   );

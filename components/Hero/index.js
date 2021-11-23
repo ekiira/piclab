@@ -2,10 +2,10 @@ import Image from "next/image";
 import styles from "../../styles/hero.module.css";
 function Hero() {
   return (
-    <div className={`h-screen ${styles.bg}`}>
-      <div className="h-full">
+    <div className={`${styles.bg}`}>
+      <div className="h-full container mx-auto">
         <div className="grid grid-cols-3 gap-4 h-full">
-          <div className="pl-20 h-full pt-16">
+          <div className="pl-20 h-full pt-16 pb-20">
             <div className="flex h-100 items-center">
               <div className="relative w-28 h-28">
                 <Image src="/images/Logo.svg" layout="fill" alt="Logo" />

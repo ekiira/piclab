@@ -3,7 +3,7 @@ import styles from "../../styles/ai.module.css";
 
 function AISection() {
   return (
-    <div className={`${styles.bg} h-screen `}>
+    <div className={`${styles.bg} py-32`}>
       <div className="container h-full w-full mx-auto">
         <div className="grid grid-cols-3 h-full">
           <div className="col-span-2">
@@ -58,7 +58,7 @@ function AISection() {
             </div>
           </div>
           <div className="pr-20 h-full items-center flex w-full">
-            <div className="bg-white h-2/3 w-full rounded-lg shadow-new flex flex-col justify-between p-10">
+            <div className="bg-white h-full w-full rounded-lg shadow-new flex flex-col justify-between p-10">
               <div>
                 <p className="text-gray-100 text-xs">Artificial Intelligence</p>
                 <p className="pt-6 text-dark text-xl-1 font-medium">
@@ -66,7 +66,7 @@ function AISection() {
                   dolor sit.
                 </p>
               </div>
-              <div className="relative h-28 w-28 mx-auto">
+              <div className="relative h-28 w-28 mx-auto my-10">
                 <Image src="/images/AI-box.png" alt="AI text" layout="fill" />
               </div>
               <div>
