@@ -1,15 +1,21 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
 
 import Prismic from "@prismicio/client";
 
 import AISection from "../components/AI";
-import HeroSection from '../components/Hero'
 import CtaSection from "../components/CTA";
 import FeatureSection from "../components/Features";
 import Navbar from "../components/Navbar";
 import NewsSection from "../components/News";
+import Preloader from "../components/Preloader";
 
 import { Client } from "../utils/prismicHelpers";
+
+const HeroSection = dynamic(() => import("../components/Hero"), {
+  ssr: false,
+  loading: () => <Preloader />,
+});
 
 export default function Home({ data }) {
   return (
