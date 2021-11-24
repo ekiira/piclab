@@ -3,6 +3,7 @@ import AISection from "../components/AI";
 import CtaSection from "../components/CTA";
 import FeatureSection from "../components/Features";
 import HeroSection from "../components/Hero";
+import Navbar from "../components/Navbar";
 import NewsSection from "../components/News";
 
 export default function Home() {
@@ -16,12 +17,13 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='main-wrapper'>
+      <div className='main-wrapper relative'>
         <HeroSection />
         <AISection/>
         <FeatureSection/>
         <NewsSection/>
         <CtaSection/>
+        <Navbar/>
       </div>
     </div>
   );

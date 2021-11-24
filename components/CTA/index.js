@@ -25,7 +25,7 @@ function Cta() {
                 className={`opacity-70 text-sm md:text-base text-gray-200 w-1/2 focus:outline-none placeholder-gray-200`}
               />
             </div>
-            <button className="text-red font-semibold text-xs border-l border-gray pl-3 md:pl-5">
+            <button className="text-red font-semibold text-xs md:text-base border-l border-gray pl-3 md:pl-5">
               Request Beta
             </button>
           </form>
