@@ -1,9 +1,8 @@
 .bg {
-  background-image: url("/images/Gradient.png"), url("/images/Waves.png");
-  background-color: #262626;
-  background-repeat: no-repeat, no-repeat;
-  background-position: 100%, left bottom;
-  background-size: cover, 80% 80%;
+  background-image: url("/images/Waves.png");
+  background-repeat:  no-repeat;
+  background-position: left bottom;
+  background-size: 80% 80%;
 }
 
 .red strong {

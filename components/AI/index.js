@@ -5,9 +5,16 @@ import styles from "../../styles/ai.module.css";
 
 function AISection({ card }) {
   return (
-    <div className={`${styles.bg} py-24 md:py-32`}>
+    <div className={`${styles.bg} py-24 md:py-32 relative h-full bg-gray-200`}>
+      <Image
+        src="/images/Gradient.png"
+        layout="fill"
+        alt="bg"
+        objectFit="cover"
+        objectPosition="top"
+      />
       <div className="container h-full w-full mx-auto">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 h-full px-10 lg:px-0">
+        <div className="z-20 grid md:grid-cols-2 lg:grid-cols-3 h-full px-10 lg:px-0">
           <div className="hidden md:grid lg:col-span-2">
             <div className="relative h-full w-full">
               <div className={`absolute top-2/4 ${styles._left_5}`}>
@@ -60,7 +67,7 @@ function AISection({ card }) {
             </div>
           </div>
           <div className="lg:pr-20 h-full items-center flex w-full">
-            <div className="bg-white h-full w-full rounded-lg shadow-new flex flex-col justify-between p-8 md:p-10">
+            <div className="z-20 bg-white h-full w-full rounded-lg shadow-new flex flex-col justify-between p-8 md:p-10">
               <div>
                 <div className={`text-gray-100 text-xs `}>
                   <RichText render={card[0].name} />
