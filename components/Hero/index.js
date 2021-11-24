@@ -6,13 +6,6 @@ import styles from "../../styles/hero.module.css";
 function Hero({ title, description }) {
   return (
     <div className={`h-full relative`}>
-      <Image
-        src="/images/Glow.png"
-        layout="fill"
-        alt="bg"
-        objectFit="cover"
-        objectPosition="top"
-      />
       <div className="z-30 h-full container mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4 h-full">
           <div className="px-10 md:pl-20 h-full pt-10 md:pt-16 pb-16 md:pb-20">
