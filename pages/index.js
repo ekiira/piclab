@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 
 import Prismic from "@prismicio/client";
 
-import AISection from "../components/AI";
 import CtaSection from "../components/CTA";
 import FeatureSection from "../components/Features";
 import Navbar from "../components/Navbar";
@@ -13,6 +12,11 @@ import Preloader from "../components/Preloader";
 import { Client } from "../utils/prismicHelpers";
 
 const HeroSection = dynamic(() => import("../components/Hero"), {
+  ssr: false,
+  loading: () => <Preloader />,
+});
+
+const AISection = dynamic(() => import("../components/AI"), {
   ssr: false,
   loading: () => <Preloader />,
 });
