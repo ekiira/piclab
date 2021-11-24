@@ -5,8 +5,10 @@ import FeatureSection from "../components/Features";
 import HeroSection from "../components/Hero";
 import Navbar from "../components/Navbar";
 import NewsSection from "../components/News";
+import { Client } from "../utils/prismicHelpers";
+import Prismic from "@prismicio/client";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div>
       <Head>
@@ -17,14 +19,24 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='main-wrapper relative'>
+      <div className="main-wrapper relative">
         <HeroSection />
-        <AISection/>
-        <FeatureSection/>
-        <NewsSection/>
-        <CtaSection/>
-        <Navbar/>
+        <AISection />
+        <FeatureSection />
+        <NewsSection />
+        <CtaSection />
+        <Navbar />
       </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const document = await Client().query(
+    Prismic.Predicates.at("document.type", "homepage")
+  );
+
+  return {
+    props: { ...document.results[0] },
+  };
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 function Navbar() {
   return (
     <div className="fixed bottom-5 inset-x-0 z-30">
-      <div className=" bg-white py-3 bottom-5 rounded-xl mx-3">
+      <div className=" bg-white py-2 bottom-5 rounded-xl mx-3">
         <div className="px-2 flex justify-between items-center">
           <div>
             <form
