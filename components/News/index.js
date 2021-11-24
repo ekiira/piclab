@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { news } from "../../pages/api/news";
+import { RichText, Date } from "prismic-reactjs";
 
 import styles from "../../styles/news.module.css";
 
-function News() {
+function News({ news }) {
   return (
     <div className={`h-full pt-32 mx-auto ${styles.bg}`}>
       <div className="grid md:grid-cols-2 h-full container mx-auto">
@@ -21,12 +21,18 @@ function News() {
                   className="grid grid-cols-2 py-10 border-b border-white last:border-b-0 border-opacity-10 gap-0"
                 >
                   <div>
-                    <p className="text-white opacity-40 text-xs">{el.date}</p>
+                    <div className="text-white opacity-40 text-xs">
+                      {Date(el.newsdate).toLocaleDateString("en-US", {
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric",
+                      })}
+                    </div>
                   </div>
                   <div>
-                    <p className="text-white font-medium text-base underline">
-                      {el.topic}
-                    </p>
+                    <div className="text-white font-medium text-base underline">
+                      <RichText render={el.newstopic} />
+                    </div>
                   </div>
                 </div>
               ))}

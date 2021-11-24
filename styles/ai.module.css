@@ -6,6 +6,10 @@
   background-size: cover, 80% 80%;
 }
 
+.red strong {
+  @apply text-red font-semibold;
+}
+
 ._left_5 {
   left: -5%;
 }

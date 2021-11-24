@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Prismic from "@prismicio/client";
+
 import AISection from "../components/AI";
 import CtaSection from "../components/CTA";
 import FeatureSection from "../components/Features";
@@ -6,9 +8,8 @@ import HeroSection from "../components/Hero";
 import Navbar from "../components/Navbar";
 import NewsSection from "../components/News";
 import { Client } from "../utils/prismicHelpers";
-import Prismic from "@prismicio/client";
 
-export default function Home(props) {
+export default function Home({ data }) {
   return (
     <div>
       <Head>
@@ -20,10 +21,10 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="main-wrapper relative">
-        <HeroSection />
-        <AISection />
-        <FeatureSection />
-        <NewsSection />
+        <HeroSection title={data.title} description={data.description} />
+        <AISection card={data.card} />
+        <FeatureSection features={data.features} />
+        <NewsSection news={data.news} />
         <CtaSection />
         <Navbar />
       </div>

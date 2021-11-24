@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { RichText } from "prismic-reactjs";
+
 import styles from "../../styles/hero.module.css";
-function Hero() {
+
+function Hero({ title, description }) {
   return (
     <div className={`${styles.bg} h-full`}>
       <div className="h-full container mx-auto">
@@ -21,20 +24,15 @@ function Hero() {
 
               <div className="pt-6">
                 <h1 className="text-white text-3xl">
-                  Powerful image <br />{" "}
-                  <span className="font-semibold">asset management</span> <br />{" "}
-                  for everyone.
+                  <RichText render={title} />
                 </h1>
               </div>
             </div>
 
             <div className="pt-16 md:pt-28">
-              <p className="font-medium text-white border-white border-l-2 pl-10 text-sm">
-                <span className="font-bold"> Organize, transform, & serve</span>
-                <br />
-                your entire photo library. The perfect image management app for
-                freelancers, organizations, & web developers.
-              </p>
+              <div className="font-medium text-white border-white border-l-2 pl-10 text-sm">
+                <RichText render={description} />
+              </div>
             </div>
           </div>
           <div className="hidden md:grid lg:col-span-2">

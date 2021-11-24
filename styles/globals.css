@@ -15,3 +15,7 @@ html {
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(55px);
 }
+
+.red strong {
+  @apply font-medium text-red;
+}

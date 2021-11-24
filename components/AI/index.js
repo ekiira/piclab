@@ -1,7 +1,9 @@
 import Image from "next/image";
+import { RichText } from "prismic-reactjs";
+
 import styles from "../../styles/ai.module.css";
 
-function AISection() {
+function AISection({ card }) {
   return (
     <div className={`${styles.bg} py-24 md:py-32`}>
       <div className="container h-full w-full mx-auto">
@@ -60,21 +62,26 @@ function AISection() {
           <div className="lg:pr-20 h-full items-center flex w-full">
             <div className="bg-white h-full w-full rounded-lg shadow-new flex flex-col justify-between p-8 md:p-10">
               <div>
-                <p className="text-gray-100 text-xs">Artificial Intelligence</p>
-                <p className="pt-6 text-dark text-xl-1 font-medium">
-                  Let <span className="text-red">A.I.</span> handle lorem ipsum
-                  dolor sit.
-                </p>
+                <div className={`text-gray-100 text-xs `}>
+                  <RichText render={card[0].name} />
+                </div>
+                <div
+                  className={`pt-6 text-dark text-xl-1 font-medium ${styles.red}`}
+                >
+                  <RichText render={card[0].cardtitle} />
+                </div>
               </div>
               <div className="relative h-28 w-28 mx-auto my-10">
-                <Image src="/images/AI-box.png" alt="AI text" layout="fill" />
+                <Image
+                  src={card[0].image.url}
+                  alt={card[0].image.alt}
+                  layout="fill"
+                />
               </div>
               <div>
-                <p className="text-dark opacity-70 text-xs-1 ">
-                  <span className="font-bold">No more need</span> to lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna.
-                </p>
+                <div className="text-dark opacity-70 text-xs-1 ">
+                  <RichText render={card[0].carddescription} />
+                </div>
               </div>
             </div>
           </div>

@@ -1,8 +1,8 @@
 import Image from "next/image";
+import { RichText } from "prismic-reactjs";
 import { Splide, SplideSlide } from "splide-nextjs/react-splide";
 
-import { features } from "../../pages/api/feature";
-function Feature() {
+function Feature({ features }) {
   return (
     <div className="h-full pt-20 container mx-auto">
       <div className="text-center py-8">
@@ -42,24 +42,29 @@ function Feature() {
                 >
                   <div className="px-5 md:px-10 lg:w-4/5">
                     <div className="pb-6">
-                      <p className="text-gray-100 text-xs">{el.title}</p>
+                      <div className="text-gray-100 text-xs">
+                        {" "}
+                        <RichText render={el.featurename} />
+                      </div>
                     </div>
                     <div>
-                      <p className="font-medium text-xl-1 text-dark">
-                        {el.subtitle}
-                      </p>
+                      <div className={`font-medium text-xl-1 text-dark red`}>
+                        <RichText render={el.featuretitle} />
+                      </div>
                     </div>
                     <div className="pt-5 md:pt-8">
-                      <p className="text-dark opacity-70 text-xs-1">
-                        {el.description}
-                      </p>
+                      <div className="text-dark opacity-70 text-xs-1">
+                        <RichText render={el.featuredescription} />
+                      </div>
                     </div>
                   </div>
                   <div className="px-2 pt-10 md:pt-14">
                     <div className="relative h-56 lg:h-80">
                       <Image
-                        src={el.image}
-                        alt="feature"
+                        src={el.featureimage.url}
+                        alt={el.featureimage.alt}
+                        placeholder="blur"
+                        blurDataURL={el.featureimage.url}
                         layout="fill"
                         className="rounded-xl h-full"
                       />
