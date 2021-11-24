@@ -7,7 +7,14 @@ function Cta() {
       className={`${styles.bg} relative h-full py-20 md:py-32 flex items-center justify-center w-full`}
     >
       <div>
-        <Image src="/images/BG.png" layout="fill" alt="bg" objectFit="cover" />
+        <Image
+          src="/images/BG.png"
+          layout="fill"
+          alt="bg"
+          objectFit="cover"
+          blurDataURL="/images/BG.png"
+          placeholder="blur"
+        />
       </div>
       <div className="z-30 w-11/12 md:1/4 lg:w-2/5 mx-auto container py-20">
         <p className="text-2xl md:text-3xl text-white text-center">
