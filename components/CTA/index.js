@@ -1,10 +1,15 @@
+import Image from "next/image";
+
 import styles from "../../styles/cta.module.css";
 function Cta() {
   return (
     <div
-      className={`${styles.bg} py-20 md:py-32 flex items-center justify-center w-full`}
+      className={`${styles.bg} relative h-full py-20 md:py-32 flex items-center justify-center w-full`}
     >
-      <div className="w-11/12 md:1/4 lg:w-2/5 mx-auto container py-20">
+      <div>
+        <Image src="/images/BG.png" layout="fill" alt="bg" objectFit="cover" />
+      </div>
+      <div className="z-30 w-11/12 md:1/4 lg:w-2/5 mx-auto container py-20">
         <p className="text-2xl md:text-3xl text-white text-center">
           Let’s get started lorem <br /> ipsum with{" "}
           <span className="font-bold">PicLab</span>
