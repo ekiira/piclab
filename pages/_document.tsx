@@ -10,14 +10,13 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link
-            rel="preload"
+            rel="stylesheet"
             href="https://cloud.typography.com/6929016/7418832/css/fonts.css"
-            as="stylesheet"
           ></link>
           <link
             rel="preload"
             href="https://rsms.me/inter/inter.css"
-            as="stylesheet"
+            as="style"
           ></link>
           <script src="https://kit.fontawesome.com/117bcfe378.js"></script>
         </Head>
