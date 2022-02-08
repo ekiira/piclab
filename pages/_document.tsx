@@ -12,12 +12,12 @@ export default class MyDocument extends Document {
           <link
             rel="preload"
             href="https://cloud.typography.com/6929016/7418832/css/fonts.css"
-            rel="stylesheet"
+            as="stylesheet"
           ></link>
           <link
             rel="preload"
             href="https://rsms.me/inter/inter.css"
-            rel="stylesheet"
+            as="stylesheet"
           ></link>
           <script src="https://kit.fontawesome.com/117bcfe378.js"></script>
         </Head>
