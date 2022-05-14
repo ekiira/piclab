@@ -1,1 +1,1 @@
-## PicLab F.E. Exercise
+## PicLab is a website template 
