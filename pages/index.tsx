@@ -30,6 +30,10 @@ export default function Home({ data }) {
           name="description"
           content="Powerful image asset management for everyone."
         />
+        <meta
+          property="og:image"
+          content="/images/piclab-h.png
+          />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="main-wrapper relative">
