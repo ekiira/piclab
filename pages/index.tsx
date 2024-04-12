@@ -32,8 +32,8 @@ export default function Home({ data }) {
         />
         <meta
           property="og:image"
-          content="/images/piclab-h.png
-          />
+          content="/images/piclab-h.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="main-wrapper relative">
